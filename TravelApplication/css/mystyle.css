@@ -1,0 +1,376 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  min-height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/nature-2990060.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.navbar-toggler span {
+  color: red;
+}
+
+.navbar {
+  background-color: transparent;
+}
+.nav-item .nav-link {
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  border-radius: 20px 20px 20px 20px;
+  color: white;
+  margin-left: 5px;
+}
+
+.nav-item .nav-link:hover {
+  background-color: blue;
+  color: black;
+  transform: scale(1.1);
+}
+
+#navbar form button {
+  background-color: limegreen;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: 0.25s;
+}
+
+#navbar form button:hover {
+  background-color: blue;
+  color: black;
+  transform: scale(1.2);
+}
+
+.tittleinfo {
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s
+}
+
+.tittleinfo:hover {
+  transform: scale(1.1);
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
+  border-radius: 30px 30px 30px 30px;
+  width: 150px;
+}
+
+.parent .image1:hover {
+  transform: scale(1.1);
+}
+
+.image2 {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  border: 1px solid #000000;
+  border-radius: 30px 30px 30px 30px;
+  width: 150px;
+}
+
+.parent .image2:hover {
+  transform: scale(1.1);
+}
+
+span h1 {
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+}
+
+.img1 {
+  text-align: left;
+  max-height: 450px;
+  border: 2px solid black;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card .card-body {
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.card .card-body:hover {
+  transform: scale(1.1);
+}
+
+.card .card-body .button1 {
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  border-radius: 20px 20px 20px 20px;
+  color: white;
+  margin-left: 5px;
+}
+
+.card .card-body .button1:hover {
+  background-color: lawngreen;
+  color: black;
+  transform: scale(1.1);
+}
+
+.bar {
+  margin-left: 140px;
+}
+
+.setter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../images/sunrise-1014712.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.box span {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg))translateZ(400px);
+}
+
+.box span img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.better img {
+  background-size: cover;
+  background-position: relative;
+  justify-content: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.home .content {
+  text-align: center;
+  padding: 50px;
+}
+
+.home .content h4 {
+  color: whitesmoke;
+  margin-top: 1px;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 5px 0px black;
+}
+
+.home .content h1 {
+  color: whitesmoke;
+  margin-top: 1px;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.home .content p {
+  color: whitesmoke;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600px;
+  text-shadow: 0px 1px 0px black;
+}
+
+.changecontent::after {
+  content: ' ';
+  color: lightsalmon;
+  animation: text 8s infinite linear;
+}
+
+@keyframes text {
+  0% {
+    content: 'India';
+  }
+
+  10% {
+    content: 'Italy';
+  }
+
+  20% {
+    content: 'France';
+  }
+
+  30% {
+    content: 'America';
+  }
+
+  40% {
+    content: 'Egypt';
+  }
+
+  50% {
+    content: 'Dubai';
+  }
+
+  60% {
+    content: 'Japan';
+  }
+
+  70% {
+    content: 'Australia';
+  }
+
+  80% {
+    content: 'Germany';
+  }
+
+  90% {
+    content: 'United Kingdom';
+  }
+
+  100% {
+    content: 'Africa';
+  }
+}
+
+.home .content .button4 {
+  background-color: limegreen;
+  transition: 0.5s;
+  color: whitesmoke;
+
+}
+
+.home .content .button4:hover {
+  background-color: blue;
+  transform: scale(1.1);
+}
+
+@media (max-width:450px) {
+  .home {
+    background-position: 50%;
+  }
+}
+
+@media (max-width:450px) {
+  .home .content h4 {
+    font-size: 25px;
+  }
+
+  .home .content h1 {
+    font-size: 38px;
+  }
+
+  .home .content p {
+    font-size: 13px;
+  }
+}
+
+.social-links i {
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  background: black;
+  color: whitesmoke;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5 ease;
+
+}
+
+#footer {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+#footer h1 {
+  font-weight: 600px;
+  padding-top: 30px;
+}
+
+.about {
+  align-items: center;
+  display: flex;
+
+}
+
+.pic img {
+  display: flex;
+  padding: 20px;
+}
+
+.main {
+  padding: 0 20px;
+  border: 1px solid black;
+  height: 260px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../images/neuschwanstein-2602208.jpg);
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+}
+
+.main h1 {
+  margin-top: 20px;
+  margin-left: 220px;
+}
